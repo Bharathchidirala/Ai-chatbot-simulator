@@ -40,3 +40,9 @@ def get_response(user_input):
         "Hmm… I'm still learning bro!",
         "Nice! What else do you want to talk about?"
     ])
+print("🤖 Bharath AI Chatbot (type 'exit' to stop')")
+while True:
+    user_message = input("You: ")
+    if user_message.lower() == "exit":
+        break
+    print("AI:", get_response(user_message))
